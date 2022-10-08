@@ -221,7 +221,7 @@ public class BabyBirths {
        for(File f:dr.selectedFiles()){
            FileResource fr = new FileResource(f);
            CSVParser parser = fr.getCSVParser(false);
-           String currentYears = f.getName().substring(3,7);// 是"f" 而不是 "fr"
+           String currentYears = f.getName().substring(3,7);
            int currentYear = Integer.parseInt(currentYears);
            int tempRank =0;
            int rank= -1;
